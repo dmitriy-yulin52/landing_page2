@@ -1,0 +1,99 @@
+.resume {
+    padding-top: 120px;
+    &__title {
+        margin-right: 5px;
+        text-align: center;
+        position: relative;
+        @include before_circle;
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle {
+        text-align: center;
+        margin-top: 6px;
+    }
+    .divider {
+        margin: 25px auto 0 auto;
+    }
+    &__wrapper {
+        margin-top: 60px;
+        padding-left: 106px;
+        display: grid;
+        grid-template-columns: repeat(2, 375px);
+        column-gap: 143px;
+    }
+    &__column {
+        &-title {
+            position: relative;
+            padding-left: 43px;
+            &:before {
+                content: '';
+                position: absolute;
+                left: -7px;
+                top: 10px;
+                width: 15px;
+                height: 15px;
+                background: $main-color;
+                border-radius: 100%;
+            }
+        }
+    }
+    &__list {
+        margin-top: 45px;
+        li {
+            margin-bottom: 45px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            position: relative;
+            &:after {
+                content: '';
+                position: absolute;
+                top: -50px;
+                left: 0;
+                width: 1px;
+                height: calc(100% + 49px);
+                background-color: #000;
+            }
+        }
+    }
+    &__item {
+        padding-left: 43px;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 19px;
+            width: 43px;
+            height: 1px;
+            background-color: #000;
+        }
+        &-icon {
+            position: absolute;
+            left: 58px;
+            top: 16px;
+            @include before_circle;
+            &:before {
+                top: -15px;
+                left: -15px;
+            }
+        }
+        &-head {
+            position: relative;
+            margin-left: 53px;
+        }
+        &-subtitle {
+            margin-top: 3px;
+            font-weight: 500;
+        }
+        &-text {
+            margin-top: 12px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+}

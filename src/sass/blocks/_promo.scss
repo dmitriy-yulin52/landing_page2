@@ -1,0 +1,76 @@
+.promo {
+    position: relative;
+    padding-top: 200px;
+    height: 100vh;
+    background: url('../img/promo/web1.jpg')center (center / cover) no-repeat;
+    &__title {
+        margin-left: 10px;
+        color: #fff;
+        position: relative;
+        z-index: 1;
+        @include before_circle;
+    }
+    &__subtitle {
+        margin-top: 9px;
+        width: 630px;
+        color: #fff;
+    }
+    &__links {
+        width: 300px;
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__link {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        padding: 12px 0;
+        width: 135px;
+        height: 45px;
+        transition: all 0.6s;
+        a {
+            color: #fff;
+        }
+        &.active {
+            width: 135px;
+            height: 45px;
+            background: #FFA501;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            &:hover {
+                transform: scale(1.05);
+                cursor: pointer;
+            }
+        }
+    }
+    .hamburger {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        cursor: pointer;
+        transition: all 0.6s;
+        &:hover {
+            transform: scale(1.05);
+            span {
+                background-color: $main-color;
+            }
+        }
+        span {
+            display: block;
+            width: 30px;
+            height: 3px;
+            background: #fff;
+            margin-bottom: 6px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        .long {
+            width: 36px;
+        }
+    }
+}

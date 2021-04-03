@@ -1,0 +1,43 @@
+.sidepanel {
+    position: fixed;
+    top: 226px;
+    left: 53px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    &__link {
+        margin-bottom: 15px;
+        transition: all 0.6s;
+        svg path {
+            fill: #fff;
+        }
+        &:hover {
+            svg path {
+                transform: scale(1.05);
+                fill: $main-color;
+            }
+        }
+    }
+    &__divider {
+        width: 1px;
+        height: 70px;
+        background-color: #fff;
+        margin-bottom: 7px;
+    }
+    &__text {
+        width: 24px;
+        height: 148px;
+        span {
+            display: block;
+            width: 148px;
+            height: 24px;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+            color: #fff;
+            transform: rotate( -90deg) translate(-62px, -64px);
+        }
+    }
+}
