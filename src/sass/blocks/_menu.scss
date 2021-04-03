@@ -6,11 +6,13 @@
     height: 100vh;
     visibility: hidden;
     transition: all .6s;
+    opacity: 0;
     z-index: 4;
     &.active {
         left: 0;
         transition: all 0.7s;
         visibility: visible;
+        opacity: 1;
     }
     &__block {
         position: relative;
@@ -29,6 +31,7 @@
         line-height: 36px;
         margin-bottom: 15px;
         position: relative;
+        transition: all .6s;
         &:before {
             content: '';
             position: absolute;
@@ -41,6 +44,7 @@
         }
         &:hover {
             transform: scale(1.05);
+            transition: all .6s;
             &:before {
                 background-color: #fff;
             }
@@ -87,7 +91,8 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 100vh;
-        background: rgba(255, 255, 255, 0.75);
+        height: 100%;
+        background-color: #fff;
+        opacity: .75;
     }
 }
