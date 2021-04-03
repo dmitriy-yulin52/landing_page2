@@ -23,11 +23,17 @@
     .container {
         max-width: 720px;
     }
+    .sidepanel {
+        display: none;
+    }
 }
 
 @media(max-width:768px) {
     .container {
         max-width: 540px;
+    }
+    .sidepanel {
+        display: none;
     }
     .promo__subtitle {
         font-size: 45px;
@@ -39,6 +45,9 @@
         max-width: 100%;
         padding: 0 10px;
     }
+    .sidepanel {
+        display: none;
+    }
     .promo__subtitle {
         font-size: 34px;
         line-height: 45px;
@@ -48,6 +57,9 @@
 @media(max-width:320px) {
     .container {
         width: 100%;
+    }
+    .sidepanel {
+        display: none;
     }
     .promo {
         padding-top: 130px;
