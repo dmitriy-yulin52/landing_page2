@@ -66,8 +66,10 @@
         }
         &__form {
             margin-top: 19px;
-            grid-template: 45px 190px 49px/repeat(2, 246px);
+            // grid-template: 45px 190px 49px/repeat(2, 246px);
             column-gap: 24px;
+            grid-template-columns: repeat(2, 246px);
+            grid-template-rows: 45px 190px 49px;
         }
     }
 }
