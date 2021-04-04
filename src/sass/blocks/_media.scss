@@ -62,7 +62,7 @@
         }
         &__input,
         &__textarea {
-            padding: 2px;
+            padding: 1px;
         }
         &__form {
             margin-top: 19px;
@@ -144,13 +144,13 @@
         &__wrapper {
             justify-content: center;
             grid-template-columns: 630px;
-            grid-template-rows: 232px 336px;
             row-gap: 5px;
         }
         &__descr {
             padding-left: 10px;
         }
         &__form {
+            margin-top: 21px;
             grid-template: 45px 167px 45px / repeat(2, 275px);
             column-gap: 24px;
         }
@@ -248,6 +248,7 @@
         }
     }
     .price {
+        padding-top: 80px;
         &__wrapper {
             margin-top: 25px;
         }
@@ -256,17 +257,34 @@
         }
     }
     .contacts {
+        padding-top: 80px;
         &__wrapper {
             justify-content: center;
             grid-template-columns: 446px;
-            grid-template-rows: 232px 336px;
             row-gap: 5px;
         }
-        &__input {
-            padding: 3px;
+        &__subtitle {
+            font-size: 30px;
+        }
+        &__input,
+        &__textarea {
+            padding: 2px;
         }
         &__form {
-            grid-template: 45px 167px 70px/repeat(2, 204px);
+            grid-template-columns: repeat(2, 204px);
+            grid-template-rows: 45px 167px 70px;
+        }
+        &__triggers {
+            grid-template-columns: repeat(1, 220px);
+            grid-template-rows: 40px 45px;
+            justify-content: center;
+            row-gap: 15px;
+        }
+        &__btn {
+            grid-row: 2/3;
+        }
+        &__policy {
+            padding-left: 21px;
         }
     }
 }
@@ -339,8 +357,87 @@
         }
     }
     .price {
+        padding-top: 80px;
         &__wrapper {
             margin-top: 25px;
+        }
+    }
+    .contacts {
+        padding-top: 80px;
+        &__subtitle {
+            font-size: 27px;
+        }
+        &__wrapper {
+            grid-template-columns: 395px;
+        }
+        &__subtitle {
+            font-size: 24px;
+        }
+        &__form {
+            margin-top: 20px;
+            grid-template-columns: repeat(1, 390px);
+            grid-template-rows: 45px 45px 145px 40px;
+            column-gap: 0;
+            row-gap: 18px;
+        }
+        &__input {
+            padding: 1px;
+        }
+        &__triggers {
+            grid-template-columns: repeat(1, 220px);
+            grid-template-rows: 40px 45px;
+            justify-content: center;
+            row-gap: 15px;
+        }
+        &__btn {
+            grid-row: 2/3;
+        }
+        &__policy {
+            padding-left: 21px;
+        }
+        .email {
+            grid-row: 2/3;
+        }
+    }
+}
+
+@media(max-width:500px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .contacts {
+        padding-top: 80px;
+        &__wrapper {
+            padding: 0;
+            grid-template-columns: 380px;
+        }
+        &__subtitle {
+            font-size: 24px;
+        }
+        &__form {
+            grid-template-columns: repeat(1, 368px);
+            grid-template-rows: 45px 45px 145px 40px;
+            column-gap: 0;
+            row-gap: 18px;
+        }
+        &__input {
+            padding: 1px;
+        }
+        &__triggers {
+            grid-template-columns: repeat(1, 220px);
+            grid-template-rows: 40px 45px;
+            justify-content: center;
+            row-gap: 15px;
+        }
+        &__btn {
+            grid-row: 2/3;
+        }
+        &__policy {
+            padding-left: 21px;
+        }
+        .email {
+            grid-row: 2/3;
         }
     }
 }
@@ -400,6 +497,19 @@
         }
         &__item {
             grid-template: repeat(2, minmax(20px, auto))/147px 130px;
+        }
+    }
+    .contacts {
+        &__wrapper {
+            padding: 0 35px 0 35px;
+            grid-template-columns: 300px;
+        }
+        &__form {
+            grid-template-columns: repeat(1, 299px);
+            row-gap: 23px;
+        }
+        &__descr {
+            padding-left: 1px;
         }
     }
 }
